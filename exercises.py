@@ -17,6 +17,7 @@ user_input_string = input("Please enter a string: ")
 user_input_num1 = int(input("Please enter your first index: "))
 user_input_num2 = int(input("Please enter your second index: "))
 
-# Next we write a script containing conditional statements about the indicies and strings
+# Next we write a script containing conditional statements about the indices and strings
 
-if len(user_input_string) <= user_input_num1 
+if len(user_input_string) <= user_input_num1 and len(user_input_string) <= user_input_num2
+    print("The indices are too big to slice the string")
