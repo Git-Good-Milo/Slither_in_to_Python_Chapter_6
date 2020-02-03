@@ -12,17 +12,26 @@
 # Question 2
 # Write a program that will take as input, a string and two integers. The two integers will represent indices. If the string can be sliced using the two indices then print the sliced string. If either or both of the integers are outside the strings index range then print that the string cannot be sliced at those integers.
 
-# First we specify user_inputs for a string and 2 integers for the index
-user_input_string = input("Please enter a string: ")
-user_input_num1 = int(input("Please enter your first index: "))
-user_input_num2 = int(input("Please enter your second index: "))
+# # First we specify user_inputs for a string and 2 integers for the index
+# user_input_string = input("Please enter a string: ")
+# user_input_num1 = int(input("Please enter your first index: "))
+# user_input_num2 = int(input("Please enter your second index: "))
+#
+# # Next we write a script containing conditional statements about the indices and strings
+# # We will also need a while loop to prevent negative numbers from being used
+#
+# if len(user_input_string) <= user_input_num1 and len(user_input_string) <= user_input_num2:
+#     print("The indices are too big to slice the string")
+# elif len(user_input_string) > user_input_num1 and len(user_input_string) > user_input_num2:
+#     print(f"Your string {user_input_string} can be sliced! Here is your output: ")
+#     print()
+#     print(user_input_string[user_input_num1:user_input_num2])
 
-# Next we write a script containing conditional statements about the indices and strings
-# We will also need a while loop to prevent negative numbers from being used
+# Question 3
+# When you sign up for accounts on website or apps, you may be told your password strength when entering it for the first time. In this exercise, you are to write a program that takes in as input, a string that will represent a password.
 
-if len(user_input_string) <= user_input_num1 and len(user_input_string) <= user_input_num2:
-    print("The indices are too big to slice the string")
-elif len(user_input_string) > user_input_num1 and len(user_input_string) > user_input_num2:
-    print(f"Your string {user_input_string} can be sliced! Here is your output: ")
-    print()
-    print(user_input_string[user_input_num1:user_input_num2])
+# First we specify the user_input_pass, initialise a counter for the password, and initialise a counter to
+user_input_pass = input("Please enter your password: ")
+pass_strength = 0
+
+# Next we need so specify some conditional statments to see what characters the password contains
