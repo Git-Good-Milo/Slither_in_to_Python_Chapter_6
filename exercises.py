@@ -30,8 +30,36 @@
 # Question 3
 # When you sign up for accounts on website or apps, you may be told your password strength when entering it for the first time. In this exercise, you are to write a program that takes in as input, a string that will represent a password.
 
-# First we specify the user_input_pass, initialise a counter for the password, and initialise a counter to
+# First we specify the user_input_pass, initialise a counter for the password, and initialise a counter to iterate through the password
 user_input_pass = input("Please enter your password: ")
 pass_strength = 0
 
-# Next we need so specify some conditional statments to see what characters the password contains
+# Generate a list of special characters
+special_list = ["$", "#", "@", "^"]
+
+# Next we need so specify some conditional statements to see what characters the password contains
+# Greastie@007
+for character in user_input_pass:
+    if character.isupper():
+        pass_strength += 1
+        break
+for character in user_input_pass:
+    if character.islower():
+        pass_strength += 1
+        break
+for character in user_input_pass:
+    if character.isnumeric():
+        pass_strength += 1
+        break
+for character in user_input_pass:
+    for index in special_list:
+        if character == index:
+            pass_strength += 1
+            break
+
+print(f"You password strength is {pass_strength}")
+if int(pass_strength) == 4:
+    print("You password is strong enough")
+elif int(pass_strength) < 4:
+    print("Sorry your password is not strong enough")
+
