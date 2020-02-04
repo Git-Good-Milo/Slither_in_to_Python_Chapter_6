@@ -35,31 +35,34 @@ user_input_pass = input("Please enter your password: ")
 pass_strength = 0
 
 # Generate a list of special characters
-special_list = ["$", "#", "@", "^"]
+special_list = ["$", "#", "@", "^", "£", "!", "%", "*" ]
 
 # Next we need so specify some conditional statements to see what characters the password contains
-# Greastie@007
-for character in user_input_pass:
-    if character.isupper():
-        pass_strength += 1
-        break
-for character in user_input_pass:
-    if character.islower():
-        pass_strength += 1
-        break
-for character in user_input_pass:
-    if character.isnumeric():
-        pass_strength += 1
-        break
-for character in user_input_pass:
-    for index in special_list:
-        if character == index:
-            pass_strength += 1
-            break
 
-print(f"You password strength is {pass_strength}")
-if int(pass_strength) == 4:
-    print("You password is strong enough")
-elif int(pass_strength) < 4:
-    print("Sorry your password is not strong enough")
+# for character in user_input_pass:
+#     if character.isupper():
+#         pass_strength += 1
+#         break
+# for character in user_input_pass:
+#     if character.islower():
+#         pass_strength += 1
+#         break
+# for character in user_input_pass:
+#     if character.isnumeric():
+#         pass_strength += 1
+#         break
+# for character in user_input_pass:
+#     for index in special_list:
+#         if character == index:
+#             pass_strength += 1
+#             break
+#
+# print(f"You password strength is {pass_strength}")
+# if int(pass_strength) == 4:
+#     print("You password is strong enough")
+# elif int(pass_strength) < 4:
+#     print("Sorry your password is not strong enough")
+
+# Question 4
+# Write a program that takes 3 floating point numbers as input from the user: a starting radius, radius increment and an ending radius. Based on these three numbers, your program should output a table with a spheres corresponding surface area and volume.
 
