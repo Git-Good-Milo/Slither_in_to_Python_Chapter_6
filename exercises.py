@@ -1,3 +1,5 @@
+import math
+math.pi
 # # Question 1
 # # Write a program that takes as input, a single integer from the user which will specify how many decimal places the number e should be formatted to.
 #
@@ -65,4 +67,20 @@ special_list = ["$", "#", "@", "^", "£", "!", "%", "*" ]
 
 # Question 4
 # Write a program that takes 3 floating point numbers as input from the user: a starting radius, radius increment and an ending radius. Based on these three numbers, your program should output a table with a spheres corresponding surface area and volume.
+
+# First we need to set the input variables for the starting radius, the increment radius, and the final radius
+initial_radius = int(input("Please enter your first radius: "))
+increment_radius = int(input("Please enter the amount you would like to increment by: "))
+final_radius = int(input("Please enter the final radius: "))
+
+# Next we need to construct the formula used to calculate the area and the volume
+A = 4*math.pi*initial_radius**2
+V = (4/3)*math.pi*initial_radius**3
+
+# Next we begin the first of our formatting. We need to print the radius, area and volume
+print("Radius")
+
+# Next we need to construct a while loop to increment by the amount the user inputed
+while initial_radius <= final_radius:
+    print()
 
