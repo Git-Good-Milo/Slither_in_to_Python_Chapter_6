@@ -1,5 +1,4 @@
 import math
-math.pi
 # # Question 1
 # # Write a program that takes as input, a single integer from the user which will specify how many decimal places the number e should be formatted to.
 #
@@ -33,11 +32,11 @@ math.pi
 # When you sign up for accounts on website or apps, you may be told your password strength when entering it for the first time. In this exercise, you are to write a program that takes in as input, a string that will represent a password.
 
 # First we specify the user_input_pass, initialise a counter for the password, and initialise a counter to iterate through the password
-user_input_pass = input("Please enter your password: ")
-pass_strength = 0
-
-# Generate a list of special characters
-special_list = ["$", "#", "@", "^", "£", "!", "%", "*" ]
+# user_input_pass = input("Please enter your password: ")
+# pass_strength = 0
+#
+# # Generate a list of special characters
+# special_list = ["$", "#", "@", "^", "£", "!", "%", "*" ]
 
 # Next we need so specify some conditional statements to see what characters the password contains
 
@@ -69,18 +68,20 @@ special_list = ["$", "#", "@", "^", "£", "!", "%", "*" ]
 # Write a program that takes 3 floating point numbers as input from the user: a starting radius, radius increment and an ending radius. Based on these three numbers, your program should output a table with a spheres corresponding surface area and volume.
 
 # First we need to set the input variables for the starting radius, the increment radius, and the final radius
-initial_radius = int(input("Please enter your first radius: "))
-increment_radius = int(input("Please enter the amount you would like to increment by: "))
-final_radius = int(input("Please enter the final radius: "))
-
-# Next we need to construct the formula used to calculate the area and the volume
-A = 4*math.pi*initial_radius**2
-V = (4/3)*math.pi*initial_radius**3
+initial_radius = float(input("Please enter your first radius: "))
+increment_radius = float(input("Please enter the amount you would like to increment by: "))
+final_radius = float(input("Please enter the final radius: "))
 
 # Next we begin the first of our formatting. We need to print the radius, area and volume
-print("Radius")
+print("                Radius" + "+++++++++++++++" + "Volume")
 
-# Next we need to construct a while loop to increment by the amount the user inputed
+# Next we need to construct a while loop to increment by the amount the input of the user
 while initial_radius <= final_radius:
-    print()
+
+    # Next we need to construct the formula used to calculate the area and the volume
+    A = 4 * math.pi * initial_radius ** 2
+    V = (4 / 3) * math.pi * initial_radius ** 3
+    print(A, "++++++++++++++++++++", V)
+    initial_radius += increment_radius
+
 
